@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+}
+.profile-img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00f7ff;
+  margin-bottom: 10px;
+}
+#toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.light-mode {
+  background: white;
+  color: black;
+}
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar li {
+  list-style: none;
+  padding: 10px;
+}
+.main {
+  flex: 1;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.hero {
+  grid-column: span 2;
+  text-align: center;
+  padding: 60px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+}
+.btn {
+  background: linear-gradient(45deg, #2563eb, #38bdf8);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.btn-outline {
+  border: 1px solid #1a11c0;
+  padding: 10px 20px;
+  color: #4d06f3;
+  background: #00f5ff;
+  color: #000;
+  box-shadow: 0 0 15px #4105c1;
+
+}
+.card {
+  padding: 25px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+.skills span {
+  display: inline-block;
+  padding: 10px;
+  background: #1e293b;
+  margin: 5px;
+  border-radius: 10px;
+}
+.project-card {
+  background: #1e293b;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+input, textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+@media (max-width: 768px) {
+  .sidebar { display: none; }
+  .hero { grid-column: span 1; }
+}
+.porfile{
+  text-align: center;
+}
+.social-icons{
+  display: inline-block;
+  margin-top: 0 10px;
+  font-size: 22px;
+  color: white;
+  transition: 0.3s;
+}
+.social-icons a:hover{
+  color: #00bcd4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
